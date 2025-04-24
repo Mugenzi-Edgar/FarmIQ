@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmIQ | Your Path To A Better Season</title>
+    <link rel="stylesheet" href="AgriD.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="icon" href="images/logo.png" type="image">
+    <script src="https://kit.font awesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="navigation">
+        <div class="add">
+            <a href="Agrid.html"><img src="images/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="About/about.html" id="aboutBtn">About</a></li>
+                <li><a href="service.html">Service</a></li>
+                <a href="#" class="btnLogin-popup">Login</a>
+            </ul>
+        </div>
+        <div class="wrapper">
+          <span class="icon-close">&times;</span>
+        
+          <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+              <div class="input-box">
+                <input type="text" required>
+                <label>Username</label>
+                <span class="icon">&#128100;</span>
+              </div>
+              <div class="input-box">
+                <input type="password" required>
+                <label>Password</label>
+                <span class="icon">&#128274;</span>
+              </div>
+              <div class="remember-forgot">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot Password?</a>
+              </div>
+              <button type="submit" class="btn">Login</button>
+              <div class="login-register">
+                <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+              </div>
+            </form>
+          </div>
+        
+          <div class="form-box register">
+            <h2>Register</h2>
+            <form action="#">
+              <div class="input-box">
+                <input type="text" required>
+                <label>Username</label>
+                <span class="icon">&#128100;</span>
+              </div>
+              <div class="input-box">
+                <input type="email" required>
+                <label>Email</label>
+                <span class="icon">&#9993;</span>
+              </div>
+              <div class="input-box">
+                <input type="password" required>
+                <label>Password</label>
+                <span class="icon">&#128274;</span>
+              </div>
+              <div class="remember-forgot">
+                <label><input type="checkbox"> Agree to terms</label>
+              </div>
+              <button type="submit" class="btn">Register</button>
+              <div class="login-register">
+                <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="content">
+            <h1>Farm Smarter: Get Location-Based Advice Instantly</h1>
+            <a href="Signup.html" class="doter">Get Started</a>
+        </div>
+    </div>
+
+    <section class="middle">
+        <h1>Key Features</h1>
+        <p>FarmIQ helps you make informed decisions about planting, fertilizers, and where to get the best agricultural inputs—based on your exact location and season.</p>
+        <div class="content2">
+            <div class="course-col">
+                <h3>Smart Crop Recommendations</h3>
+                <p>Enter your location to receive AI-based suggestions on what crops grow best in your soil and season.</p>
+            </div>
+            <div class="course-col">
+                <h3>Fertilizer & Manure Guidance</h3>
+                <p>Get recommendations on the best manure and fertilizers suited to your crops and land type.</p>
+            </div>
+            <div class="course-col">
+                <h3>Local Resource Finder</h3>
+                <p>Find nearby suppliers for seeds, fertilizers, and tools based on your current location.</p>
+            </div>
+        </div>
+    </section>
+    <section class="slider-container" id="sliderScroll">
+        <h2>Our Services</h2>
+        <div class="slider" id="slider">
+          <div class="slide">
+            <img src="services/location.jpg" alt="Location-Based Crop Suggestions">
+            <div class="overlay">
+              <h4>📍 Location-Based Crop Suggestions</h4>
+              <p>Discover the best crops for your area based on climate, soil, and season.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="services/fertilizer.jpg" alt="Manure & Fertilizer Guidance">
+            <div class="overlay">
+              <h4>💩 Manure & Fertilizer Guidance</h4>
+              <p>Get the right mix of organic and chemical fertilizers tailored to your land and crops.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="services/shop.jpg" alt="Local Input Locator">
+            <div class="overlay">
+              <h4>🧭 Local Input Locator</h4>
+              <p>Find nearby suppliers for seeds, manure, tools, and other essential farming inputs.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="services/calendar.png" alt="Seasonal Calendar">
+            <div class="overlay">
+              <h4>🗓️ Seasonal Farming Calendar</h4>
+              <p>Know the ideal planting and harvesting windows with our smart seasonal planner.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="images/inside.jpg" alt="Farming Insights">
+            <div class="overlay">
+              <h4>📊 Smart Farming Insights</h4>
+              <p>Access expert farming tips, pest alerts, and data-driven advice to boost your yield.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="images/inside2.jpg" alt="Pre-Season Advice">
+            <div class="overlay">
+              <h4>🌤️ Pre-Season Farming Advice</h4>
+              <p>Prepare your farm before the season starts with land prep tips and soil care guidance.</p>
+            </div>
+          </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+  <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      </section>
+      <script src="FarmIQ.js"></script>
+      <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+      
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            slide.classList.remove("active");
+            if (i === index) {
+              slide.classList.add("active");
+            }
+          });
+        }
+      
+        function changeSlide(direction) {
+          slideIndex = (slideIndex + direction + slides.length) % slides.length;
+          showSlide(slideIndex);
+        }
+      
+        function autoSlide() {
+          slideIndex = (slideIndex + 1) % slides.length;
+          showSlide(slideIndex);
+        }
+      
+        setInterval(autoSlide, 4000); // Auto-slide every 4 seconds
+        showSlide(slideIndex);
+        
+  const modal = document.getElementById("aboutModal");
+  const btn = document.getElementById("aboutBtn");
+  const span = document.querySelector(".close");
+
+  btn.onclick = () => {
+    modal.style.display = "block";
+    document.body.classList.add('modal-open');
+  }
+
+  span.onclick = () => {
+    modal.style.display = "none";
+    document.body.classList.remove('modal-open');
+  }
+
+  window.onclick = (event) => {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      document.body.classList.remove('modal-open');
+    }
+  }
+
+
+      </script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <footer class="footer">
+    <div class="row">
+      <div class="col">
+        <img src="images/logo.png" alt="FarmIQ Logo" class="logo">
+        <p>We're here to support your farming journey. Reach out with questions, feedback, or partnership inquiries.</p>
+      </div>
+      <div class="col">
+        <h3>📍 Address</h3>
+        <p>Kigali, Rwanda</p>
+        <p>FarmIQ HQ, Green Valley</p>
+        <p class="email-id">support@farmiq.rw</p>
+        <h4>+250 725 507 931</h4>
+      </div>
+      <div class="col">
+        <h3>🔗 Links</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>📰 Newsletter</h3>
+        <form action="subscribe.php">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <div class="social-icons">
+          <a href="whatsapp.web"><i class="fab fa-whatsapp"></i></a>
+          <a href="instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="facebook.com"><i class="fab fa-facebook"></i></a>
+          <a href="x.com"><i class="fab fa-x-twitter"></i></a>
+        </div>
+        
+      </div>
+    </div>
+    
+  </footer>
+  
+   <!-- About Us Modal -->
+<div id="aboutModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>About FarmIQ</h2>
+    <p>FarmIQ is your smart farming assistant. We provide localized, seasonal, and data-driven recommendations for farmers of all levels.</p>
+    <h3>Our Mission</h3>
+    <p>To empower African farmers with smart technology, enabling better yields, smarter decisions, and sustainable growth.</p>
+    <h3>What We Offer</h3>
+    <ul>
+      <li>📍 Real-time crop recommendations</li>
+      <li>🧪 Fertilizer and manure usage guidance</li>
+      <li>🧭 Local provider locator</li>
+      <li>📊 Smart seasonal advice</li>
+    </ul>
+  </div>
+</div>
+         
+</body>
+</html>
